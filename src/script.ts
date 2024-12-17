@@ -1,61 +1,68 @@
 // STEG 1 - skapa en interface för varje objekt och använd rätt interface på rätt objekt
+import { Person, Cars, Books, Comp, Films, Student,Phone, Customer, Product, Order } from "./interface";
+import { Trip, House,Game, Music,Restaurant,MovieCharacter,Teacher,Library,Conference,Weather } from "./type";
 
-const person = {
+const person: Person = {
     name: "Alice",
     age: 25,
     address: "Wonderland"
 };
 
-const car = {
+
+const car: Cars = {
     brand: "Tesla",
     model: "Model S",
     year: 2023
 };
 
-const book = {
+
+const book: Books = {
     title: "The Great Gatsby",
     author: "F. Scott Fitzgerald",
     pages: 218
 };
 
-const computer = {
+
+const computer: Comp = {
     brand: "Apple",
     processor: "M1",
     ram: "16GB",
     storage: "512GB"
 };
 
-const movie = {
+
+const movie: Films = {
     title: "Inception",
     director: "Christopher Nolan",
     genre: "Science Fiction"
 };
 
-const student = {
+const student: Student = {
     name: "John Doe",
     id: "123456",
     courses: ["Math", "Science", "History"]
 };
 
-const phone = {
+const phone: Phone = {
     brand: "Samsung",
     model: "Galaxy S21",
     os: "Android"
 };
 
-const customer = {
+const customer: Customer = {
     name: "Jane Smith",
     customerNumber: "78910",
     purchaseHistory: ["Laptop", "Mouse"]
 };
 
-const product = {
+
+const product: Product = {
     name: "Headphones",
     price: 99.99,
     category: "Electronics"
 };
 
-const order = {
+const order: Order = {
     orderNumber: "001",
     productList: ["Headphones", "Mouse"],
     totalPrice: 129.98
@@ -63,61 +70,63 @@ const order = {
 
 // steg 2 - skapa en type för varje objekt och använd rätt type på rätt objekt
 
-const trip = {
+
+const trip: Trip = {
     destination: "Paris",
     departureDate: "2023-04-01",
     returnDate: "2023-04-10"
 };
 
-const house = {
+const house: House = {
     address: "123 Maple Street",
     rooms: 4,
     price: 350000
 };
 
-const game = {
+const game: Game = {
     title: "The Legend of Zelda",
     platform: "Nintendo Switch",
     genre: "Adventure"
 };
 
-const musicAlbum = {
+const musicAlbum: Music = {
     title: "Abbey Road",
     artist: "The Beatles",
     numberOfTracks: 17
 };
 
-const restaurant = {
+const restaurant: Restaurant = {
     name: "The Fancy Fork",
     address: "456 Elm Street",
     menu: ["Steak", "Salad", "Soup"]
 };
 
-const movieCharacter = {
+const movieCharacter: MovieCharacter = {
     name: "James Bond",
     actor: "Daniel Craig",
     movie: "Skyfall"
 };
 
-const teacher = {
+const teacher: Teacher = {
     name: "Mr. Anderson",
     subject: "Math",
     classroom: "Room 101"
 };
 
-const library = {
+const library: Library = {
     name: "City Library",
     location: "Downtown",
     numberOfBooks: 50000
 };
 
-const conference = {
+
+const conference: Conference = {
     name: "Tech Summit 2023",
     date: "2023-09-15",
     participants: ["Alice", "Bob", "Charlie"]
 };
 
-const weatherForecast = {
+const weatherForecast: Weather = {
     date: "2023-03-10",
     temperature: 15,
     precipitation: "Rain"
